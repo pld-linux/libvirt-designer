@@ -6,7 +6,7 @@ Summary:	Libvirt configuration designer
 Summary(pl.UTF-8):	Biblioteka do projektowania konfiguracji libvirt
 Name:		libvirt-designer
 Version:	0.0.2
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://libvirt.org/libvirt/designer/%{name}-%{version}.tar.gz
@@ -68,6 +68,9 @@ Summary:	libvirt-designer API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libvirt-designer
 Group:		Documentation
 Requires:	gtk-doc-common
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 libvirt-designer API documentation.
