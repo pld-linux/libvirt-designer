@@ -68,9 +68,7 @@ Summary:	libvirt-designer API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libvirt-designer
 Group:		Documentation
 Requires:	gtk-doc-common
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 libvirt-designer API documentation.
@@ -85,9 +83,7 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	vala-libosinfo >= 0.2.7
 Requires:	vala-libvirt-glib >= 0.1.7
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description -n vala-libvirt-designer
 Vala API for libvirt-designer library.
